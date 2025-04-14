@@ -52,6 +52,7 @@ if __name__ == '__main__':
     while(maxCapacity < 1 ):
         try:
             maxCapacity: int = int(input("Enter max capacity of the Pakudex: "))
+            continue
         except ValueError:
             None
         print("Please enter a valid size.")
