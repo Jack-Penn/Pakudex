@@ -49,10 +49,11 @@ def sortPakuri():
 if __name__ == '__main__':
     print('Welcome to Pakudex: Tracker Extraordinaire!')
     maxCapacity = 0
-    while(maxCapacity < 1 ):
+    while(True):
         try:
             maxCapacity: int = int(input("Enter max capacity of the Pakudex: "))
-            continue
+            if(maxCapacity > 0):
+                break
         except ValueError:
             None
         print("Please enter a valid size.")
