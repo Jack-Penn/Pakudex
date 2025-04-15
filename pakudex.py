@@ -13,7 +13,7 @@ class Pakudex:
     def get_species_array(self):
         if(self.get_size() == 0):
             return None
-        return self.speciesList
+        return [pakuri.get_species() for pakuri in self.speciesList]
     def get_stats(self, species: str):
         try:
             p: Pakuri = next(p for p in self.speciesList if p.get_species() == species)

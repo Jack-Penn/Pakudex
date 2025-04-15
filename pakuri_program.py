@@ -14,7 +14,7 @@ def listPakuri():
     else:
         print("Pakuri In Pakudex:")
         for i in range(len(pakuris)):
-            print(str(i+1) + ". " + pakuris[i].get_species())
+            print(str(i+1) + ". " + pakuris[i])
 
 def showPakuri():
     speciesName: str = input("Enter the name of the species to display: ")
