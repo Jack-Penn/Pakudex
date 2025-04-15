@@ -76,10 +76,10 @@ if __name__ == '__main__':
 
         try:
             selectedOption = int(input("\nWhat would you like to do? "))-1
+            if (selectedOption in range(0, len(Menu))):
+                Menu[selectedOption].function()
+                continue
         except ValueError:
-            continue
-        if(selectedOption in range(0, len(Menu))):
-            Menu[selectedOption].function()
-        else:
-            print("Unrecognized menu selection!")
+            None
+        print("Unrecognized menu selection!")
     print("Thanks for using Pakudex! Bye!")

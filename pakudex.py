@@ -21,7 +21,7 @@ class Pakudex:
         except StopIteration:
             return None
     def sort_pakuri(self):
-        self.speciesList.sort(key=lambda p: p.get_species)
+        self.speciesList.sort(key=lambda p: p.get_species())
     def add_pakuri(self, species: str):
         if(self.get_size() < self.capacity and self.get_stats(species) == None):
             self.speciesList.append(Pakuri(species))
